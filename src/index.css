@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root {
+  /* fallback (nếu JS chưa chạy) */
+  --header-height: 64px;
+}
+
+/* cho smooth scroll (tuỳ thích) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Khi người dùng click anchor (#xxx) các section có id sẽ có margin-top bằng header */
+section[id],
+[id] {
+  /* +8px để dư không bị chạm sát */
+  scroll-margin-top: calc(var(--header-height) + 8px);
+}
