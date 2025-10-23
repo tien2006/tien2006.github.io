@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bản quyền */}
+      {/* Bản quyềnn */}
       <div style={{ textAlign: 'center', paddingTop: '20px', borderTop: '1px solid #ccc', marginTop: '30px' }}>
         © Bản quyền thuộc về TTA. All rights reserved.
       </div>
